@@ -1,6 +1,6 @@
 <?php
 
-class Routers
+ class Router
 {
   private $request;
   private $supportedHttpMethods = array(
