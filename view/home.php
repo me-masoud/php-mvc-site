@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html><!-------Shared free html By Mellatweb.com-->
 <head>
-<meta charset="utf-8">
-<title>DiffOne | Homepage</title>
-<!-- Stylesheets -->
-<link href="../public/assets/css/bootstrap.css" rel="stylesheet">
-<link href="../public/assets/css/style.css" rel="stylesheet">
-<link href="../public/assets/css/responsive.css" rel="stylesheet">
-
-<!-- Color Switcher Mockup -->
-<link href="../public/assets/css/color-switcher-design.css" rel="stylesheet">
-<!-- Color Themes -->
-<link id="theme-color-file" href="assets/color-themes/default-theme.css" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="../public/assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="../public/assets/images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<?php require_once 'parts/generals/headtag.php'; ?>
 </head>
 
 <body>
@@ -34,107 +12,7 @@
     <div class="preloader"></div>
 
  	<!-- Main Header-->
-    <header class="main-header header-style-one">
-
-		<!--Header-Upper-->
-        <div class="header-upper">
-        	<div class="auto-container">
-            	<div class="inner-container clearfix">
-
-                	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="/"><img src="\assets\images\logo\logo_transparent.png" alt="" title=""></a></div>
-                    </div>
-
-					<div class="nav-outer clearfix">
-						<!--Mobile Navigation Toggler-->
-						<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<div class="navbar-header">
-								<!-- Toggle Button -->
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-								<ul class="navigation clearfix">
-									<li><a href="#banner-section">مقدمه</a></li>
-									<li><a href="#about-section">درباره من</a></li>
-									<li><a href="#services-section">کار های من</a></li>
-									<li><a href="#call-to-action-section">در حال یادگیری</a></li>
-									<li><a href="#contact-section">تماس با من</a></li>
-                                    <li><a href="#footer">اطلاعات کامل</a></li>
-                                </ul>
-							</div>
-						</nav>
-
-						<!-- Main Menu End-->
-						<div class="outer-box clearfix">
-
-							<!-- Quote Btn -->
-							<div class="btn-box">
-								<a href="tel:+800-019-4900" class="contact-btn theme-btn"><span class="icon flaticon-smartphone"></span> +98 912 45 49 822</a>
-							</div>
-
-							<!-- Nav Btn -->
-							<div class="menu-toggler nav-toggler hidden-bar-opener"><span class="icon flaticon-menu"></span></div>
-
-						</div>
-					</div>
-
-                </div>
-
-            </div>
-        </div>
-        <!--End Header Upper-->
-
-		<!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-left">
-                    <a href="index.blade.php" title=""><img src="\assets\images\logo\logo_transparent.png" alt="" title=""></a>
-                </div>
-                <!--Right Col-->
-                <div class="pull-right">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav>
-					<!-- Main Menu End-->
-
-					<!-- Main Menu End-->
-					<div class="outer-box clearfix">
-
-						<!-- Quote Btn -->
-						<div class="btn-box">
-							<a href="tel:+800-019-4900" class="contact-btn theme-btn"><span class="icon flaticon-smartphone"></span>+98 912 454 98 22</a>
-						</div>
-
-						<!-- Nav Btn -->
-						<div class="menu-toggler nav-toggler hidden-bar-opener"><span class="icon flaticon-menu"></span></div>
-
-					</div>
-
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.blade.php"><img src="\assets\images\logo\logo_transparent.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-    </header>
+   <?php require_once 'parts/generals/header.php';?>
     <!-- End Main Header -->
 
 	<!-- Hidden Navigation Bar -->
@@ -468,92 +346,7 @@
 	<!-- End Call To Action Section -->
 
 	<!-- Main Footer -->
-    <footer class="main-footer" id="footer">
-		<div class="patern-icon" style="background-image: url(../public/assets/images/icons/icon-4.png)"></div>
-    	<div class="auto-container">
-        	<!--Widgets Section-->
-            <div class="widgets-section">
-            	<div class="row clearfix">
-
-					<!-- Footer Column -->
-					<div class="footer-column col-lg-4 col-md-6 col-sm-12">
-						<div class="footer-widget logo-widget">
-							<div class="logo">
-								<a href="/"><img src="../public/assets/images/logo/logo_transparent.png" alt="" /></a>
-							</div>
-							<div class="text">وبسایت شخصی مسعود حسینی | این وبسایت توسط مسعود حسینی طراحی شده است</div>
-							<!--Social Links-->
-							<ul class="social-links clearfix">
-								<li><a href="https://twitter.com/masoud_hosseiny"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="https://www.facebook.com/masoudhosseiny98"><span class="fa fa-facebook-f"></span></a></li>
-								<li><a href="https://www.instagram.com/masoud_polo"><span class="fa fa-instagram"></span></a></li>
-								<li><a href="https://www.linkedin.com/in/masoud-hosseiny-852693101/"><span class="fa fa-linkedin"></span></a></li>
-								<li><a href="live:hosseiny998"><span class="fa fa-skype"></span></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Footer Column -->
-					<div class="footer-column col-lg-4 col-md-6 col-sm-12">
-						<div class="footer-widget links-widget">
-							<div class="footer-title">
-								<h4>Site Links</h4>
-							</div>
-							<div class="row clearfix">
-								<div class="column col-lg-6 col-md-6 col-xs-12">
-									<ul>
-										<li><a href="#">Home Page</a></li>
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Latest News</a></li>
-										<li><a href="#">Recent Projects</a></li>
-									</ul>
-								</div>
-								<div class="column col-lg-6 col-md-6 col-xs-12">
-									<ul>
-										<li><a href="#">Our Services</a></li>
-										<li><a href="#">Partners Team</a></li>
-										<li><a href="#">Testimonials</a></li>
-										<li><a href="#">Contact Support</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--Footer Column-->
-					<div class="footer-column col-lg-4 col-md-6 col-sm-12">
-						<div class="footer-widget gallery-widget">
-							<div class="footer-title">
-								<h4>Recent Projects</h4>
-							</div>
-							<div class="widget-content">
-								<div class="images-outer clearfix">
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-									<!--Image Box-->
-									<figure class="image-box"><a href="https://via.placeholder.com/570x400" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="https://via.placeholder.com/80x80" alt=""></a></figure>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-	</footer>
+    <?php include_once 'parts/generals/footer.php';?>
 
 </div>
 <!--End pagewrapper-->
@@ -569,19 +362,6 @@
     <div class="color-palate-head">
         <h6>Choose Your Color</h6>
     </div>
-    <div class="various-color clearfix">
-        <div class="colors-list">
-            <span class="palate default-color active" data-theme-file="../public/assets/color-themes/default-theme.css"></span>
-            <span class="palate green-color" data-theme-file="../public/assets/color-themes/green-theme.css"></span>
-            <span class="palate blue-color" data-theme-file="../public/assets/color-themes/blue-theme.css"></span>
-            <span class="palate orange-color" data-theme-file="../public/assets/color-themes/orange-theme.css"></span>
-            <span class="palate purple-color" data-theme-file="../public/assets/color-themes/purple-theme.css"></span>
-            <span class="palate teal-color" data-theme-file="../public/assets/color-themes/teal-theme.css"></span>
-            <span class="palate brown-color" data-theme-file="../public/assets/color-themes/brown-theme.css"></span>
-            <span class="palate redd-color" data-theme-file="../public/assets/color-themes/redd-color.css"></span>
-        </div>
-    </div>
-
     <a href="#" class="purchase-btn">Purchase now $17</a>
 
     <div class="palate-foo">
@@ -590,20 +370,7 @@
 
 </div>
 
-<script src="../public/assets/js/jquery.js"></script>
-<script src="../public/assets/js/popper.min.js"></script>
-<script src="../public/assets/js/bootstrap.min.js"></script>
-<script src="../public/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="../public/assets/js/jquery.fancybox.js"></script>
-<script src="../public/assets/js/appear.js"></script>
-<script src="../public/assets/js/parallax.min.js"></script>
-<script src="../public/assets/js/tilt.jquery.min.js"></script>
-<script src="../public/assets/js/jquery.paroller.min.js"></script>
-<script src="../public/assets/js/owl.js"></script>
-<script src="../public/assets/js/wow.js"></script>
-<script src="../public/assets/js/jquery-ui.js"></script>
-<script src="../public/assets/js/script.js"></script>
-<script src="../public/assets/js/color-settings.js"></script>
+<?php include_once 'parts/generals/scripts.php'; ?>
 
 </body>
 </html>
