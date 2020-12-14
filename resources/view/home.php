@@ -53,14 +53,14 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(././public/images/user-3.jpg);"></div>
-							<h1><span>Louie Jie Mahusay</span></h1>
-							<h3><span>Web Developer / Photographer</span></h3>
+							<div class="profile-thumb" style="background: url(././public/images/1.jpg);"></div>
+							<h1><span>Masoud Hosseiny</span></h1>
+							<h3><span>Web Developer / AI Researcher</span></h3>
 							<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-twitter2"></i></a></li>
-									<li><a href="#"><i class="icon-facebook2"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://twitter.com/masoudpolo"><i class="icon-twitter2"></i></a></li>
+									<li><a href="facebook/masoudpolo"><i class="icon-facebook2"></i></a></li>
+									<li><a href="linkedin.com/masoudpolo"><i class="icon-linkedin2"></i></a></li>
 									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
 								</ul>
 							</p>
