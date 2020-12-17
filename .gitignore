@@ -6,3 +6,4 @@
 /.htaccess
 .idea
 
+node_modules

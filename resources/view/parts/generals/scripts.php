@@ -1,14 +1,18 @@
-<script src="././public/assets/js/jquery.js"></script>
-<script src="././public/assets/js/popper.min.js"></script>
-<script src="././public/assets/js/bootstrap.min.js"></script>
-<script src="././public/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="././public/assets/js/jquery.fancybox.js"></script>
-<script src="././public/assets/js/appear.js"></script>
-<script src="././public/assets/js/parallax.min.js"></script>
-<script src="././public/assets/js/tilt.jquery.min.js"></script>
-<script src="././public/assets/js/jquery.paroller.min.js"></script>
-<script src="././public/assets/js/owl.js"></script>
-<script src="././public/assets/js/wow.js"></script>
-<script src="././public/assets/js/jquery-ui.js"></script>
-<script src="././public/assets/js/script.js"></script>
-<script src="././public/assets/js/color-settings.js"></script>
+	<!-- jQuery -->
+	<script src="././public/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="././public/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="././public/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="././public/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="././public/js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="././public/js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="././public/js/google_map.js"></script>
+	
+	<!-- Main -->
+	<script src="././public/js/main.js"></script>
