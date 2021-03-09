@@ -7,8 +7,10 @@
 					<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn" style="vertical-align: inherit">
 						<p>
 							<ul class="fh5co-social-icons">
+								<li><a href="/"><i class="icon-home"></i></a></li>
 								<li><a href="#">EN</a></li>
 								<li><a href="#">FA</a></li>
+								
 							</ul>
 						</p>
 					</div>

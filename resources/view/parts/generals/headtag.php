@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <link rel="shortcut icon" href="././public/assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="././public/assets/images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
