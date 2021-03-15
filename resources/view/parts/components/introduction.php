@@ -8,9 +8,8 @@
 						<p>
 							<ul class="fh5co-social-icons">
 								<li><a href="/"><i class="icon-home"></i></a></li>
-								<li><a href="#">EN</a></li>
-								<li><a href="#">FA</a></li>
-								
+								<li><a href="aboute">EN</a></li>
+								<li><a href="aboute-fa">فا</a></li>
 							</ul>
 						</p>
 					</div>
@@ -20,8 +19,8 @@
 				<div class="display-t js-fullheight">
 					<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 						<div class="profile-thumb" style="background: url(././public/images/1.jpg);"></div>
-						<h1><span>Masoud Hosseiny</span></h1>
-						<h3><span>Web Developer / AI Researcher</span></h3>
+						<h1><?php echo $langVar->name; ?></h1>
+						<h3><span><?php echo $langVar->subtitle; ?></span></h3>
 						<p>
 							<ul class="fh5co-social-icons">
 								<li><a href="https://twitter.com/masoudpolo"><i class="icon-twitter2"></i></a></li>

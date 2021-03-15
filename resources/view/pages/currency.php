@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency</title>
+<head>
+    <?php require_once './resources/view/parts/generals/head.php' ?>
+</head>
 </head>
 <body>
-    <div>
-        <h1>BitCoin Price</h1>
-        <p id="bitcoinUSD"></p>
-        <p id="bitcoinEUR"></p>
-        <p id="bitcoinGBP"></p>
-    </div>
+
+
+<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<?php include_once './resources/view/parts/components/currency/bitcoin.php' ;?>
+	
+	<?php include_once './resources/view/parts/generals/footer.php';?>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	<?php require_once './resources/view/parts/generals/scripts.php'; ?>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       

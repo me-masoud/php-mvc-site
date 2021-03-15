@@ -1,3 +1,8 @@
+<?php
+		require('./Controllers/helper/functions.php');
+		$functions = new Helper;
+		$langVar = json_decode($functions->getLangVars());
+	?>
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Masoud Polo</title>

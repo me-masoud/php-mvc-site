@@ -5,9 +5,7 @@
 	<?php include_once './resources/view/parts/generals/head.php' ?>
 	</head>
 	<body>
-		
 	<div class="fh5co-loader"></div>
-	
 	<div id="page">	
 	<?php include_once './resources/view/parts/components/introduction.php' ?>
 
