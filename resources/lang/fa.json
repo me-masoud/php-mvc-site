@@ -1,4 +1,5 @@
 {
+    "lang" : "fa",
     "name" : "مسعود حسینی",
     "firstName" : "مسعود",
     "lastName" : "حسینی" ,
@@ -16,7 +17,7 @@
     "work_experience" : "تجارب کاری",
     "fullstack_developer" : "فول استک دولوپر",
     "contact"   : "تماس",
-    "send_message" : "پیام شما با موفقیت ارسال شده است",
+    "send_message" : "پیام شما با موفقیت ارسال شده است، اگر مایلید پیام دیگری ارسال بفرمایید از فرم زیر میتوانید استفاده کنید",
     "yourname" : "نام شما",
     "youremail": "آدرس ایمیل",
     "sunjectofmessage" : "موضوع پیام",
@@ -35,5 +36,8 @@
     "res11" : "working on web design with wordpress cms and markup",
     "res12" : "تحصیلات",
     "res13" : "دانشجوی مهندسی کامپیوتر(نرم افزار)",
-    "res14" : "دانشگاه آزاد کرج"
+    "res14" : "دانشگاه آزاد کرج",
+    "skills": "مهارت ها",
+    "myservices" : "سرویس ها من",
+    "webdesign" : "طراحی وب"
 }

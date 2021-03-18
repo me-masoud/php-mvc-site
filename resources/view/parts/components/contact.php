@@ -1,6 +1,6 @@
 
 	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(././public/images/cover_bg_1.jpg);">
+		<div class="video fh5co-video" style="background-image: url(././public/images/cover_bg_2.jpg);">
 			<div class="overlay"></div>
 		</div>
 		<div class="choose animate-box">

@@ -4,7 +4,7 @@
 			<div class="services-padding">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Services</h2>
+						<h2><?php echo $langVar->myservices ;?></h2>
 					</div>
 				</div>
 				<div class="row">
@@ -14,7 +14,7 @@
 								<i class="icon-paintbrush"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Web Design</h3>
+								<h3><?php echo $langVar->webdesign;?></h3>
 								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
 							</div>
 						</div>

@@ -33,6 +33,7 @@ class HomeController{
         // echo (DBController::database($sql));
         // die();
         if($result == true){
+            session_start();
             $_SESSION['send_message'] = 'sent';
             if(isset($_SESSION['send_message'])){
                 header('Location:' . $_SERVER['HTTP_REFERER']);

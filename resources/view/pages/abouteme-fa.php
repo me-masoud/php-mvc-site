@@ -13,7 +13,7 @@
 
 	<?php include_once './resources/view/parts/components/resume_map.php' ?>
 	
-	<?php include_once './resources/view/parts/components/services.php' ?>
+	<!-- <?php include_once './resources/view/parts/components/services.php' ?> -->
 
 	<?php include_once './resources/view/parts/components/skills.php'?>
 

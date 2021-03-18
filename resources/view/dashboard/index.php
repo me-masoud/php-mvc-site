@@ -35,12 +35,6 @@ use Controllers\DashboardController;
         <!-- Custom Fonts -->
         <link href="./public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
     </head>
     <body>
 
@@ -353,17 +347,22 @@ use Controllers\DashboardController;
                                     <i class="fa fa-clock-o fa-fw"></i> last messages
                                 </div>
                                 <div>
-                                    <ul id="getMessages">
+                                    <!-- <ul id="getMessages"> -->
                                         <?php
                                         
                                         while($row = $messages->fetch_assoc()) {
                                             
-                                            echo "<li>" ."<span>". $row['id'] ." - </span>" ."<span>". $row['clientname'] ." </span>" ."<span>(". $row['title'] ." ) : </span>" ."<span>". $row['text'] ." </span>".'</li>';
+                                            echo "<div style=\"with='100px'\">" .
+                                            "<p>". $row['id'] ." - </p>" .
+                                            "<p>". $row['clientname'] ." </p>" .
+                                            "<p>(". $row['title'] ." ) : </p>" .
+                                            "<div>". $row['text'] ." </div>".
+                                            '</div>';
                                         }
                                         
                                         ?>
                                         
-                                    </ul>
+                                    <!-- </ul> -->
                                 </div>
                             </div>
                             <!-- /.panel -->

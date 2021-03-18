@@ -1,4 +1,5 @@
 {
+    "lang" : "en",
     "name" : "Masoud Hosseiny",
     "firstName" : "Masoud",
     "lastName" : "Masoud",
@@ -35,5 +36,9 @@
     "res11" : "working on web design with wordpress cms and markup",
     "res12" : "Education",
     "res13" : "SoftWare Enginiering Studet",
-    "res14" : "Azad University of Karaj"
+    "res14" : "Azad University of Karaj",
+    "skills": "Skills",
+    "myservices" : "My Services",
+    "webdesign" : "Web Design"
+
 }

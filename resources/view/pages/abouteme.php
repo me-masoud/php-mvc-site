@@ -4,6 +4,7 @@
 	<head>
 	<?php include_once './resources/view/parts/generals/head.php' ?>
 	</head>
+	<!-- <body style="<?php ($langVar->lang == 'en') ? 'text-align:left ; float:left : direction:ltr;' : 'text-align:right ; float:right : direction:rtl;'; ?>"> -->
 	<body>
 		
 	<div class="fh5co-loader"></div>
@@ -15,7 +16,7 @@
 
 	<?php include_once './resources/view/parts/components/resume_map.php' ?>
 	
-	<?php include_once './resources/view/parts/components/services.php' ?>
+	<!-- <?php include_once './resources/view/parts/components/services.php' ?> -->
 
 	<?php include_once './resources/view/parts/components/skills.php'?>
 
