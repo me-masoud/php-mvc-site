@@ -347,25 +347,52 @@ use Controllers\DashboardController;
                                     <i class="fa fa-clock-o fa-fw"></i> last messages
                                 </div>
                                 <div>
-                                    <!-- <ul id="getMessages"> -->
-                                        <?php
-                                        
-                                        while($row = $messages->fetch_assoc()) {
-                                            
-                                            echo "<div style=\"with='100px'\">" .
-                                            "<p>". $row['id'] ." - </p>" .
-                                            "<p>". $row['clientname'] ." </p>" .
-                                            "<p>(". $row['title'] ." ) : </p>" .
-                                            "<div>". $row['text'] ." </div>".
-                                            '</div>';
-                                        }
-                                        
-                                        ?>
-                                        
-                                    <!-- </ul> -->
+                                
                                 </div>
                             </div>
                             <!-- /.panel -->
+
+
+
+                            <!-- /.panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <ul class="timeline">
+                                    
+                                        <?php while($row = $messages->fetch_assoc()): ?>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <h4 class="timeline-title"><?php echo $row['title']; ?></h4>
+
+                                                    <p>
+                                                        <small class="text-muted"><i class="fa fa-clock-o"></i> <?php echo $row['id'] . '--' . $row['clientname']; ?>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p style="overflow: scroll;">
+                                                        <?php echo $row['text']; ?>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <?php endwhile ?>
+                                    </ul>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+
+
+
+
+
+
                         </div>
                         <!-- /.col-lg-8 -->
                         <div class="col-lg-4">

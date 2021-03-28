@@ -1,7 +1,7 @@
 <?php
 
 namespace Controllers;
-include 'DBController.php';
+include './Database/app.php';
 
 class DashboardController{
     public function index()

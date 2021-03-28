@@ -4,7 +4,7 @@ namespace Controllers;
 
 use PDO;
 use PDOException;
-include 'DBController.php';
+include './Database/app.php';
 
 class HomeController{
     public function index(int $var = null)
