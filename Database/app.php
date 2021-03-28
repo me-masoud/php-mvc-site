@@ -1,5 +1,5 @@
 <?php
-namespace Controllers;
+namespace DataBase;
 
 use mysqli;
 use PDO;
@@ -18,7 +18,7 @@ class DBController{
     function __construct()
     {
         try{
-            $this->connnect = new PDO("mysql:host=".$this->servername.";dbname=".$this->database 
+            $this->connect = new PDO("mysql:host=".$this->servername.";dbname=".$this->database 
             , $this->user , $this->password,$this->option);
         }
         catch(PDOException $e){
@@ -62,8 +62,7 @@ class DBController{
     public function createTable($sql)
     {
         try{
-            $this->connection->exec($sql);
-
+            $this->connect->exec($sql);
             return true;
         }
         catch (PDOException $e){

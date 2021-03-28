@@ -362,8 +362,8 @@ use Controllers\DashboardController;
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
                                     <ul class="timeline">
-                                    
-                                        <?php while($row = $messages->fetch_assoc()): ?>
+                                    <?php var_dump($messages); ?>
+                                        <?php while($row = $messages): ?>
                                         <li>
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">

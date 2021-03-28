@@ -1,6 +1,9 @@
 <?php
 
 namespace Controllers;
+
+use DataBase\DBController;
+
 include './Database/app.php';
 
 class DashboardController{
@@ -12,6 +15,7 @@ class DashboardController{
     public function getMessages()
     {
         $sql = "SELECT * FROM contacts order by id desc";
-        return DBController::database($sql);
+        $select = new DBController;
+        return $select->select($sql);
     }
 }
