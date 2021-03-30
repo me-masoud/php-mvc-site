@@ -14,3 +14,5 @@
 	
 	<!-- Main -->
 	<script src="././public/js/main.js"></script>
+
+	<script src="././public/js/loginjs.js"></script>

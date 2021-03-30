@@ -31,7 +31,8 @@ class DBController{
     {
         try{
             if($value === null){
-                return $this->connect->query($sql);
+                $result = $this->connect->query($sql);
+                return $result;
             }else{
                 $stmt = $this->connect->prepare($sql);
                 $stmt->execute($value);
@@ -48,7 +49,7 @@ class DBController{
     public function insert($tableName , $fields , $values)
     {
         try{
-            $sql  = "INSERT INTO"."$tableName"."(".implode(',',$fields) . ") VALUES ( :" . implode(', :',$fields) . " )";
+            $sql  = "INSERT INTO". " ". $tableName ."(".implode(',',$fields) . ") VALUES ( :" . implode(', :',$fields) . " )";
             $stmt = $this->connect->prepare($sql);
             $stmt->execute(array_combine($fields,$values));
             return true;
@@ -69,5 +70,20 @@ class DBController{
             echo "<div> style='color:red;'> There is some problem in connection :</div>". $e->getMessage();
             return false;
         }
-}
+    }
+
+    //its not complete yet
+    public function deleteTables()
+    {
+        $sql = "show tables";
+        try{
+            $this->connect->exec($sql);
+            return true;
+        }
+        catch(PDOException $e){
+            echo "<div> style='color:red;'> There is some problem in connection :</div>". $e->getMessage();
+            return false;
+        }
+    }
+
 }

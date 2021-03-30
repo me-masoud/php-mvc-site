@@ -3,7 +3,8 @@
 use Controllers\DashboardController;
 
     $dashboard = new DashboardController;
-    $messages  = $dashboard->getMessages();
+    $messages  = $dashboard->getUnReadMessages();
+    $records = $messages->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -253,7 +254,7 @@ use Controllers\DashboardController;
                                             <i class="fa fa-comments fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
-                                            <div class="huge"><?php echo $messages->num_rows; ?></div>
+                                            <div class="huge"><?php echo count($records); ?></div>
                                             <div>Messages!</div>
                                         </div>
                                     </div>
@@ -341,36 +342,21 @@ use Controllers\DashboardController;
                     <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-8">
-                            
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-clock-o fa-fw"></i> last messages
-                                </div>
-                                <div>
-                                
-                                </div>
-                            </div>
-                            <!-- /.panel -->
-
-
-
                             <!-- /.panel -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                                    <i class="fa fa-clock-o fa-fw"></i> Unread Messages
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
                                     <ul class="timeline">
-                                    <?php var_dump($messages); ?>
-                                        <?php while($row = $messages): ?>
+                                        <?php   foreach($records as $row): ?>
                                         <li>
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">
                                                     <h4 class="timeline-title"><?php echo $row['title']; ?></h4>
-
                                                     <p>
-                                                        <small class="text-muted"><i class="fa fa-clock-o"></i> <?php echo $row['id'] . '--' . $row['clientname']; ?>
+                                                        <small class="text-muted"><?php echo $row['created_at'] ?> <i class="fa fa-clock-o"></i> <?php echo $row['id'] . '--' . $row['clientname']; ?>
                                                         </small>
                                                     </p>
                                                 </div>
@@ -381,7 +367,7 @@ use Controllers\DashboardController;
                                                 </div>
                                             </div>
                                         </li>
-                                        <?php endwhile ?>
+                                        <?php endforeach ?>
                                     </ul>
                                 </div>
                                 <!-- /.panel-body -->

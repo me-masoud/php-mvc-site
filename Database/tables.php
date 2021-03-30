@@ -22,6 +22,7 @@ class Tables extends DBController{
             `email` varchar(200) COLLATE utf8_general_ci,
             `title` varchar(200) COLLATE utf8_general_ci,
             `text` longtext COLLATE utf8_general_ci,
+            `status` enum('unread','read','stared') COLLATE utf8_general_ci NOT NULL DEFAULT 'unread',
             `created_at` datetime NOT NULL,
             `updated_at` datetime DEFAULT NULL
         ) ENGINE =InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_general_ci;"

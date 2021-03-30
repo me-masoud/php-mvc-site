@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use DataBase\DBController;
 use PDO;
 use PDOException;
 include './Database/app.php';
@@ -27,11 +28,13 @@ class HomeController{
         $title = $_POST['title'];
         $text  = $_POST['text'];
 
-        $sql = "INSERT INTO contacts (clientname , title, email , text)
-        VALUES ('$name', '$title', '$email' , '$text')";
-        $result = (DBController::database($sql)) ?  true : false;
-        // echo (DBController::database($sql));
-        // die();
+        date_default_timezone_set('Asia/Tehran');
+        $table = "contacts";
+        $fields= array('clientname' , 'title' , 'email' , 'text' , 'created_at' , 'updated_at');
+        $values= array($name , $title , $email , $text ,date("Y-m-d h:i:s"), null);
+        $DB = new DBController;
+        $result = ($DB->insert($table , $fields , $values)) ?  true : false;
+  
         if($result == true){
             session_start();
             $_SESSION['send_message'] = 'sent';
