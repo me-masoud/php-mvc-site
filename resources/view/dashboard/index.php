@@ -1,6 +1,18 @@
 <?php
 
+if(!isset($_SESSION['login'])){
+   include_once './resources/view/pages/auth.php';
+    die();
+}else{
+    if(!$_SESSION['login']){
+        include_once './resources/view/pages/auth.php';
+        die();
+    }
+}
+
 use Controllers\DashboardController;
+
+include_once './Controllers/DashboardController.php';
 
     $dashboard = new DashboardController;
     $messages  = $dashboard->getUnReadMessages();
@@ -373,12 +385,6 @@ use Controllers\DashboardController;
                                 <!-- /.panel-body -->
                             </div>
                             <!-- /.panel -->
-
-
-
-
-
-
                         </div>
                         <!-- /.col-lg-8 -->
                         <div class="col-lg-4">

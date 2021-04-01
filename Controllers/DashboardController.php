@@ -4,9 +4,17 @@ namespace Controllers;
 
 use DataBase\DBController;
 
-include './Database/app.php';
+include_once './Database/app.php';
 
 class DashboardController{
+    private $select;
+    function __construct()
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        $this->select = new DBController;
+    }
     public function index()
     {
         return include('./resources/view/dashboard/index.php');
@@ -15,14 +23,12 @@ class DashboardController{
     public function getMessages()
     {
         $sql = "SELECT * FROM contacts ORDER BY id desc";
-        $select = new DBController;
-        return $select->select($sql);
+        return $this->select->select($sql);
     }
 
     public function getUnReadMessages()
     {
         $sql = "SELECT * FROM contacts WHERE status = 'unread' ORDER BY id desc";
-        $select = new DBController;
-        return $select->select($sql);
+        return $this->select->select($sql);
     }
 }
