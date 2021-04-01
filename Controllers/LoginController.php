@@ -84,4 +84,10 @@ class LoginController{
             header("Location: login");    
         }
     }
+
+    public function logout()
+    {
+        $_SESSION['login'] = false;
+        return header("Location: login");
+    }
 }
