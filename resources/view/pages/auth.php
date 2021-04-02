@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <?php require_once './resources/view/parts/generals/head.php' ?>
+<link rel="stylesheet" href="././public/css/logincss.css">
 </head>
 <body>
-<h2>MASOUD POLO</h2>
+<a href="/personal-site"><h2>MASOUD POLO</h2></a>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="signup" method="POST">
@@ -53,6 +54,7 @@
 </div>
 
 <?php require_once './resources/view/parts/generals/scripts.php'; ?>
+<script src="././public/js/loginjs.js"></script>
 
 </body>
 </html>
