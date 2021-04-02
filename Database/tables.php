@@ -11,7 +11,7 @@ class Tables extends DBController{
             `name` varchar(200) COLLATE utf8_general_ci NOT NULL,
             `email` varchar(200) COLLATE utf8_general_ci NOT NULL,
             `password` varchar(200) COLLATE utf8_general_ci NOT NULL,
-            `status` enum('active','susband') COLLATE utf8_general_ci NOT NULL DEFAULT 'active',
+            `status` enum('active','susband') COLLATE utf8_general_ci NOT NULL DEFAULT 'susband',
             `role` enum('user' , 'admin' , 'super') COLLATE utf8_general_ci NOT NULL DEFAULT 'user',
             `created_at` datetime NOT NULL,
             `updated_at` datetime DEFAULT NULL

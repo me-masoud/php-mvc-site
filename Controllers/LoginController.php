@@ -27,13 +27,14 @@ class LoginController{
             return 'please fill the filds';
         }
         $user = $this->checkUserExist($email);
-
+        if(!$this->checkUserStatus($email)){
+            return 'user account is not active';
+        }
         if($user && $this->checkPassword($user , $password)){
            $this->setLogin($user);
         }else{
             return (!$user) ? 'user dosnt exist!' : 'password in not matched to this user!';
         }
-        ($user === true) ? $this->setLogin($user) : 
 
         $this->redirectLogin();
     }
@@ -51,7 +52,11 @@ class LoginController{
         if(!$this->checkUserExist($email)){
             $insert = new DBController;
             $result = $insert->insert('users' , $fields , $valus);
-            return $result;
+        }else{
+            return 'user already exist';
+        }
+        if($result){
+            return header("Location: login");
         }
     }
 
@@ -67,6 +72,15 @@ class LoginController{
         $result = $select->select($sql);
         $user = $result->fetchAll();
         return $user;
+    }
+
+    public function checkUserStatus($email)
+    {
+        $sql = "SELECT * FROM users WHERE email = '$email';";
+        $select = new DBController;
+        $result = $select->select($sql);
+        $user = $result->fetchAll();
+        return ($user[0]['status'] == 'active') ? true : false;
     }
 
     public function setLogin($final)
