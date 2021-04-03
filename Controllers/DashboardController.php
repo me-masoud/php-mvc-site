@@ -10,6 +10,10 @@ class DashboardController{
     private $select;
     function __construct()
     {
+        if(!isset($_SESSION['login'])){
+            header('Location: login');
+            return false;
+         }
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }

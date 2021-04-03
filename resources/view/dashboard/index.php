@@ -1,15 +1,4 @@
 <?php
-
-if(!isset($_SESSION['login'])){
-   include_once './resources/view/pages/auth.php';
-    die();
-}else{
-    if(!$_SESSION['login']){
-        include_once './resources/view/pages/auth.php';
-        die();
-    }
-}
-
 use Controllers\DashboardController;
 
 include_once './Controllers/DashboardController.php';
@@ -368,7 +357,9 @@ include_once './Controllers/DashboardController.php';
                                                 <div class="timeline-heading">
                                                     <h4 class="timeline-title"><?php echo $row['title']; ?></h4>
                                                     <p>
-                                                        <small class="text-muted"><?php echo $row['created_at'] ?> <i class="fa fa-clock-o"></i> <?php echo $row['id'] . '--' . $row['clientname']; ?>
+                                                        <small class="text-muted"><?php echo $row['created_at'] ?> 
+                                                            <i class="fa fa-clock-o"></i>
+                                                                 <?php echo $row['id'] . '--' . $row['clientname'] . '--' . $row['email']; ?>
                                                         </small>
                                                     </p>
                                                 </div>
